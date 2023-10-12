@@ -36,7 +36,7 @@ const [pokemonIndex, setPokemonIndex] = useState(0);
   return (
     <div>
       <PokemonCard pokemon = {pokemonList[pokemonIndex]}/>
-      <NavBar pokemonIndex = {pokemonIndex} pokemonList = {pokemonList} setPokemonIndex = {setPokemonIndex}/>
+      <NavBar pokemonList = {pokemonList} pokemonIndex = {pokemonIndex} setPokemonIndex = {setPokemonIndex}/>
     </div>
 );
 
