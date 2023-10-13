@@ -1,22 +1,25 @@
 function NavBar ({pokemonIndex, pokemonList, setPokemonIndex}) {
-        
-       function handleClick (index) {
-       
-            setPokemonIndex(index)
+    
 
+       function handleClickPika(element, index) {
+            if (element.name === "pikachu") { 
+                alert("pika pikachu !!!")
+            }
+        setPokemonIndex(index)
        }
     
           return (
 
             <div>
                 {pokemonList.map((element, index) => (
-                    <button key={element.name} onClick={() => handleClick(index)}>{element.name}</button>                       
+                    <button key={element.name} onClick={() => handleClickPika(element, index)}>{element.name}</button>                       
                         )
                     )
                 }
             </div>
              );
-}
+            }
+
         
 
 
